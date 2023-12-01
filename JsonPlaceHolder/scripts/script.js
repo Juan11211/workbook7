@@ -4,8 +4,8 @@ const todoInput = document.querySelector("#todoInput");
 button.onclick = callRestApi; 
 
 function callRestApi(){
-    const userInput = todoInput.value; 
-    fetch(`https://jsonplaceholder.typicode.com/todos/${userInput}`)
+    const idInput = todoInput.value; 
+    fetch(`https://jsonplaceholder.typicode.com/todos/${idInput}`)
     .then(response => response.json())
     .then(data => {
         console.log(data);
