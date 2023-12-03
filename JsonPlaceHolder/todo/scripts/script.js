@@ -1,7 +1,10 @@
 const button = document.querySelector("#todoSubmit");
 const todoInput = document.querySelector("#todoInput");
 
-button.onclick = callRestApi; 
+window.onload = () => {
+    button.onclick = callRestApi; 
+
+}
 
 function callRestApi(){
     const idInput = todoInput.value; 
