@@ -53,7 +53,8 @@ function disabledForm() {
 
 function fetchPutApi(todo){
 
-    let 
+    let title = document.getElementById('title').value;
+    let completed = document.getElementById('completed').value;
 
     fetch(`https://jsonplaceholder.typicode.com/todos/${todo.todoId}`, {
         method: "PUT",
