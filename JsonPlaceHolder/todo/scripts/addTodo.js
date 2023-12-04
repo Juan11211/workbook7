@@ -2,7 +2,6 @@
 
 window.onload = () => {
     let addButton = document.getElementById('addButton'); 
-    let displayTodoPost = document.getElementById('displayTodo')
 
     addButton.onclick = postTodoApi; 
 }

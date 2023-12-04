@@ -15,15 +15,28 @@
 
     <div class="container">
         <div class="container mt-5">
-            <h3>Add Post</h3>
+            <h3>Edit Post</h3>
+        </div>
+
+        <div class="container mt-5">
+            <div>
+                <form class="">
+                    <div class="form-group">
+                        <label for="searchTodo">Search for todo</label>
+                        <input type="number" id="todoId" name="todoId" class="form-control" />
+                    </div>
+
+                    <button id="submitSearch">Search for todo</button>
+                </form>
+            </div>
         </div>
 
 
-        <form class="" id="addForm">
+        <form class="" id="updatedForm">
 
             <div class="form-group">
                 <label>User Id</label>
-                <input type="number" id="userIdInput" name="userId" class="form-control" />
+                <input type="number" id="userId" name="userId" class="form-control" />
             </div>
 
             <div class="form-group">
@@ -39,21 +52,22 @@
                 </select>
             </div>
 
-            <button id="addButton">Add Todo</button>
+            <button id="updateBtn">Update Todo</button>
 
         </form>
+
     </div>
 
     <div class="container mt-3">
         <div>
-            <h3>Display todo's</h3>
+            <h3>Display Updated todo's</h3>
         </div>
 
-        <div id="displayTodo">
+        <div id="displayUpdatedTodo">
             
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="./scripts/addTodo.js"></script>
+    <script src="./scripts/editTodo.js"></script>
   </body>
 </html>
